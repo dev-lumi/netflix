@@ -1,0 +1,166 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#000;
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: #fff;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+header a.logo{
+    display: block;
+}
+header .logo svg{
+    fill: #e50914;
+    height: 37px;  
+}
+header div+div{
+    text-align: right;
+}
+header a.button{
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+header select{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 0px 7px 20px;
+    border-radius: 3px;
+}
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+}
+header div.select svg{
+    height: 20px;
+    fill: #fff;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+div.splash{
+    position: relative;
+    border-bottom: 8px solid #222;
+}
+div.splash div.gradient{
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    position: absolute;
+    inset: 0;
+}
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 60%;
+}
+div.splash div.Content{
+    max-width: 655px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash h3{
+    font-size: 1.2rem;
+}
+div.splash form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.splash input{
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+div.splash input ~ span{
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+div.splash input:focus{
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+div.splash input:focus ~ span{
+    top: 4px;
+    font-size: 0.8rem;
+}
+div.splash button{
+    font-size: 1.625rem;
+    padding: 13px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+}
+section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 70px 45px;
+    margin: 8px;
+    border-bottom: 8px solid #222;
+    position: relative;
+    
+}
+.S1{
+    padding: 48px;
+}
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8p;
+    text-align: left;
+}
+section div.texts p{
+    font-size: 1.625rem;
+    margin: 19.5px 0px 6.5px;
+    text-align: left;
+}
+.media{
+    position: relative;
+}
+.media.s1 img{
+   width: 100%; 
+}
+.media.s1 video{
+    width: 72%;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    z-index: -1;
+} 
+section:nth-child(even) div.texts{
+    order: 2;
+}
